@@ -47,9 +47,7 @@ namespace LearningTestAutomation
             System.Threading.Thread.Sleep(3000);
 
             IWebElement searchClearButton = wait.Until(e => e.FindElement(By.Id("search-clear-button")));
-            Console.WriteLine("searchClearButton - found");
-            
-
+            Console.WriteLine("searchClearButton - found");          
             searchClearButton.Click();
             Console.WriteLine("searchClearButton - pressed");
 
@@ -58,9 +56,9 @@ namespace LearningTestAutomation
 
             //TODO: learn how to select an item from search results
             //driver.FindElement(By.XPath("/html/body/ytd-app/div/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-video-renderer[1]/div[1]")).Click();
-            System.Threading.Thread.Sleep(2000);
+            System.Threading.Thread.Sleep(1000);
             searchClearButton.Click();            
-            searchQuery.SendKeys("'cause I don't know how xD");
+            searchQuery.SendKeys("'cause I don't know how to select from search results xD");
 
             driver.Manage().Window.Maximize();
 
@@ -71,6 +69,7 @@ namespace LearningTestAutomation
         public void closeBrowser()
         {
             //driver.Close();
+            Console.WriteLine("Čiča miča gotova je priča");
             Console.WriteLine("TearDown done");
         }
     }
