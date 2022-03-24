@@ -1,0 +1,5 @@
+*.cache
+*.suo
+*.testlog
+*.tmp
+LearningTestAutomation/LearningTestAutomation/obj/Debug/LearningTestAutomation.csproj.FileListAbsolute.txt
